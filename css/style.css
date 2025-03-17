@@ -128,8 +128,40 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-@media screen and (max-width: 1140px) {
-  .site-header (
-        max-width: 1140px;
-    );;
+/*
+ * Applica queste regole se la dimensione del tuo schermo è almeno (min-width) 1140px
+ * Se io sono a 1600px, la media query viene applicata
+ * Se io sono a 800px, non viene applicata
+*/
+@media screen and (min-width: 1140px) {
+}
+
+/*
+ * Applica queste regole se la dimensione del tuo schermo va da 0 a 800px
+ */
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    /* Tu al massimo puoi occupare 768px (non è sbagliato settarla in px) è sconsigliato settarla in percentuale */
+    /* Tu devi occupare al massimo il 100% della tua dimensione. E' sconsigliato settarla in px, è consigliato settarla in percentuale */
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lessons .col {
+    width: 100%;
+  }
+  .steps .col {
+    width: 100%;
+  }
+  .why-us {
+    background-color: rgb(34 34 34);
+  }
 }
