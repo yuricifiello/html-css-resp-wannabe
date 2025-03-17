@@ -165,3 +165,12 @@ img {
     background-color: rgb(34 34 34);
   }
 }
+
+.steps {
+  margin-bottom: 0;
+}
+
+.why-us {
+  padding: 30px;
+  margin-bottom: 0;
+}
